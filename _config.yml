@@ -5,6 +5,8 @@ sass:
 
 destination: ./docs
 
+baseurl: /project_page_site
+
 exclude:
   - node_modules
   - LICENSE

@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
   </head>
 
   <body>
     <h1>Hello, world</h1>
 
-    <script src="{{ '/assets/vendor/jquery.min.js' }}"></script>
-    <script src="{{ '/assets/vendor/popper.min.js' }}"></script>
-	  <script src="{{ '/assets/vendor/bootstrap.min.js' }}"></script>
+    <script src="{{ '/assets/vendor/jquery.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/vendor/popper.min.js' | prepend: site.baseurl }}"></script>
+	  <script src="{{ '/assets/vendor/bootstrap.min.js' | prepend: site.baseurl }}"></script>
   </body>
 </html>
