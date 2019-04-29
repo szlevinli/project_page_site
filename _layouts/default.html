@@ -7,8 +7,31 @@
   </head>
 
   <body>
+
+    <!-- header -->
     {% include header.html %}
-    <h1>Hello, world</h1>
+
+    <!-- 响应式布局容器 -->
+    <div class="container-fluid">
+    
+      <div class="row flex-row flex-xl-nowrap">
+
+        <!-- aside -->
+        {% include aside.html %}
+
+        <!-- main -->
+        {% include main.html %}
+
+        <!-- toc -->
+        {% include aside_toc.html %}
+      
+      </div>
+
+    </div>
+
+    <!-- footer -->
+
+    
 
     <script src="{{ '/assets/vendor/jquery.min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/assets/vendor/popper.min.js' | prepend: site.baseurl }}"></script>
