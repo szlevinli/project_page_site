@@ -1,0 +1,18 @@
+$header-height: 4rem;
+
+.ck-header {
+  min-height: $header-height;
+  z-index: 1000;
+}
+
+.ck-sidebar {
+  top: $header-height;
+  height: calc(100vh - #{$header-height});
+  overflow-y: auto;
+}
+
+.ck-toc {
+  top: 0;
+  height: calc(100vh - #{$header-height});
+  overflow-y: auto;
+}
