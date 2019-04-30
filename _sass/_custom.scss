@@ -11,11 +11,18 @@ $header-height: 4rem;
     height: calc(100vh - #{$header-height});
     overflow-y: auto;
   }
-  
+
   .ck-toc {
     top: $header-height;
     height: calc(100vh - #{$header-height});
     overflow-y: auto;
-  }  
+  }
 }
 
+#aside {
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+#toc {
+  border-left: 1px solid rgba(0, 0, 0, .1);
+}
