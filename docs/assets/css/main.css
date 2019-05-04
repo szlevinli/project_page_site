@@ -7592,16 +7592,30 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 .ck-header {
   min-height: 4rem;
-  z-index: 1500; }
+  z-index: 1500;
+  position: -webkit-sticky; }
+
+.ck-sidebar {
+  height: 4rem;
+  order: 0;
+  top: 4rem;
+  z-index: 1000;
+  position: -webkit-sticky; }
+
+.ck-toc {
+  order: 2;
+  top: 4rem;
+  position: -webkit-sticky; }
+
+.ck-main {
+  order: 1; }
 
 @media (min-width: 768px) {
   .ck-sidebar {
-    top: 4rem;
     height: calc(100vh - 4rem);
     overflow-y: auto; }
 
   .ck-toc {
-    top: 4rem;
     height: calc(100vh - 4rem);
     overflow-y: auto; } }
 #aside {
