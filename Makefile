@@ -17,8 +17,8 @@ build: install include-npm-deps
 	$(JEKYLL) build
 
 serve: install include-npm-deps
-	$(JEKYLL) serve
+	$(JEKYLL) serve --host 0.0.0.0
 
 s: install include-npm-deps
-	$(JEKYLL) serve --livereload
+	$(JEKYLL) serve --livereload --host 0.0.0.0
 
